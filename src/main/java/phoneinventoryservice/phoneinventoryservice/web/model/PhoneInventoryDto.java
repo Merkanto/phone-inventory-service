@@ -17,5 +17,6 @@ public class PhoneInventoryDto {
     private OffsetDateTime createdDate;
     private OffsetDateTime lastModifiedDate;
     private UUID phoneId;
+    private String imei;
     private Integer quantityOnHand;
 }
