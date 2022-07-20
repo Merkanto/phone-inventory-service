@@ -1,4 +1,4 @@
-package phoneinventoryservice.common.events;
+package phoneinventoryservice.model.events;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -2,7 +2,7 @@ package phoneinventoryservice.phoneinventoryservice.web.mappers;
 
 import org.mapstruct.Mapper;
 import phoneinventoryservice.phoneinventoryservice.domain.PhoneInventory;
-import phoneinventoryservice.phoneinventoryservice.web.model.PhoneInventoryDto;
+import phoneinventoryservice.model.PhoneInventoryDto;
 
 @Mapper(uses = {DateMapper.class})
 public interface PhoneInventoryMapper {

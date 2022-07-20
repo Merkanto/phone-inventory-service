@@ -1,4 +1,4 @@
-package phoneinventoryservice.phoneinventoryservice.web.model;
+package phoneinventoryservice.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

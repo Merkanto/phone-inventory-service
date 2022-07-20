@@ -1,4 +1,4 @@
-package phoneinventoryservice.common.events;
+package phoneinventoryservice.model.events;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;

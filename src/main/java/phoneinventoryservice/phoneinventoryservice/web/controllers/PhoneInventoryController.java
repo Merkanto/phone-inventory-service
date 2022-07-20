@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import phoneinventoryservice.phoneinventoryservice.repositories.PhoneInventoryRepository;
 import phoneinventoryservice.phoneinventoryservice.web.mappers.PhoneInventoryMapper;
-import phoneinventoryservice.phoneinventoryservice.web.model.PhoneInventoryDto;
+import phoneinventoryservice.model.PhoneInventoryDto;
 
 import java.util.List;
 import java.util.UUID;
