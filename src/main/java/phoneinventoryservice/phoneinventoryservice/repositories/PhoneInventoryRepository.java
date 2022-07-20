@@ -10,4 +10,6 @@ import java.util.UUID;
 public interface PhoneInventoryRepository extends JpaRepository<PhoneInventory, UUID> {
 
     List<PhoneInventory> findAllByPhoneId(UUID phoneId);
+
+    List<PhoneInventory> findAllByImei(String imei);
 }
