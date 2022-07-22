@@ -28,7 +28,7 @@ public class AllocationServiceImpl implements AllocationService {
         phoneOrderDto.getPhoneOrderLines().forEach(phoneOrderLine -> {
             if ((((phoneOrderLine.getOrderQuantity() != null ? phoneOrderLine.getOrderQuantity() : 0)
                     - (phoneOrderLine.getQuantityAllocated() != null ? phoneOrderLine.getQuantityAllocated() : 0)) > 0)) {
-                allocateBeerOrderLine(phoneOrderLine);
+                allocatePhoneOrderLine(phoneOrderLine);
             }
             totalOrdered.set(totalOrdered.get() + phoneOrderLine.getOrderQuantity());
             totalAllocated.set(totalAllocated.get() + (phoneOrderLine.getQuantityAllocated() != null ? phoneOrderLine.getQuantityAllocated() : 0));
@@ -39,7 +39,7 @@ public class AllocationServiceImpl implements AllocationService {
         return totalOrdered.get() == totalAllocated.get();
     }
 
-    private void allocateBeerOrderLine(PhoneOrderLineDto phoneOrderLine) {
+    private void allocatePhoneOrderLine(PhoneOrderLineDto phoneOrderLine) {
         List<PhoneInventory> phoneInventoryList = phoneInventoryRepository.findAllByImei(phoneOrderLine.getImei());
 
         phoneInventoryList.forEach(phoneInventory -> {
